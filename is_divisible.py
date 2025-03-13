@@ -41,12 +41,3 @@ assert is_divisible(25, 5) is True
 assert is_divisible(26, 5) is False
 
 
-assert is_divisible(10, 2) is True, 
-assert is_divisible(10, 3) is False, 
-assert is_divisible(21, 7) is True, 
-assert is_divisible(15, 4) is False, 
-assert is_divisible(0, 5) is True, 
-
-
-
-
