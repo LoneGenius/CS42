@@ -21,15 +21,26 @@ def square(x):
 print(mul(100,3))
 print(square(4))
 
-f = max  # Save the built-in max function
-result = f(2, 3, 4)  # Finds the max value → 4
-print(result)  # Output: 4
+if 21 % 3 == 0:
+    print("21 is divisible by 3")
+else:
+    print("21 is not divisible by 3")
 
-# Don't overwrite max
-# max = 3  ❌ This would break the code
+num = int(input("Enter a number: "))
+divisor = int(input("Enter a divisor: "))
 
-print(max(1, 4))  # Output: 4
+if num % divisor == 0:
+    print(f"{num} is divisible by {divisor}")
+else:
+    print(f"{num} is not divisible by {divisor}")
+    
+def is_divisible(num, divisor):
+    if num % divisor == 0:
+        return True
+    else:
+        return False
 
-del max  # Deletes the integer `3` and restores built-in `max`
-print(max(1, 4))  # Works again
+print(is_divisible(25, 5))  # ✅ True
+print(is_divisible(26, 5))  # ✅ False
+
 
