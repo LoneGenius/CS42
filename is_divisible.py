@@ -35,12 +35,9 @@ else:
     print(f"{num} is not divisible by {divisor}")
     
 def is_divisible(num, divisor):
-    if num % divisor == 0:
-        return True
-    else:
-        return False
+    return num % divisor == 0
 
-print(is_divisible(25, 5))  # ✅ True
-print(is_divisible(26, 5))  # ✅ False
+assert is_divisible(25, 5) is True
+assert is_divisible(26, 5) is False
 
 
